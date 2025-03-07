@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <td>
+            Cadastro
+        </td>
+    </h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="" method="get">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <br>
+            <br>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"
+                required>
+            <br>
+            <br>
+            <label for="nasc">Data de Nascimento: </label>
+            <input type="date" name="nasc" id="nasc">
+            <br><br>
+            <label for="end">Endereço: </label>
+            <br>
+            <textarea name="end" id="end" cols="40" rows="5" placeholder="Digite o seu Endereço" required></textarea>
+            <br><br>
+            <label for="sexo">Sexo: </label>
+            <br>
+            <select name="sexo" id="sexo">
+                <option value=""></option>
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+            </select>
+            <br>
+            <br>
+            <label for="tel">Telefone: </label>
+            <input type="tel" name="tel" id="tel" placeholder="Digite o seu Telefone">
+            <br>
+            <br>
+            <label for="login">Login: </label>
+            <input type="email" name="login" id="login" placeholder="Digite o seu login">
+            <br>
+            <br>
+            <label for="senha">Digite a sua Senha:</label>
+            <br>
+            <input type="password" name="senha" id="senha" required>
+        </form>
+    </fieldset>
+</body>
+
+</html>
