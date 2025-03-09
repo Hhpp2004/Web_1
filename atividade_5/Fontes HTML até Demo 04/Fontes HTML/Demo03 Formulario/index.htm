@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição da Página">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Gustavo">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Suas características</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="Nome" id="nome" value="Gustavo" autofocus required><br>
+            <label for="idade">Idade: </label>
+            <input type="number" name="Idade" id="idade" placeholder="Digite sua idade aqui."><br>
+
+            <label>Passatempo favorito:</label> <br>
+            <input type="radio" name="passatempo" id="filme" value="filme" checked>
+            <label for="filme">Filme</label><br>
+            <input type="radio" name="passatempo" id="musica" value="musica">
+            <label for="musica">Música</label><br>
+            <input type="radio" name="passatempo" id="esporte" value="esporte">
+            <label for="esporte">Esporte</label><br>
+
+            <label>Transporte alternativo:</label> <br>
+            <input type="checkbox" name="transporte1" id="transporte1" value="bicicleta" checked>
+            <label for="transporte1">Bicicleta</label><br>
+            <input type="checkbox" name="transporte2" id="transporte2" value="patins">
+            <label for="transporte2">Patins</label><br>
+            <input type="checkbox" name="transporte3" id="transporte3" value="skate">
+            <label for="transporte3">Skate</label><br>
+
+            <label for="sexo">Sexo: </label>
+            <select name="sexo" id="sexo">
+                <option value="masculino" selected>Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select><br>
+
+            <label for="frutas">Escolha frutas que gosta:</label>
+            <select id="frutas" name="frutas" size="3" multiple>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="goiaba">Goibaba</option>
+                <option value="limao">Limão</option>
+                <option value="maça">Maça</option>
+            </select><br><br>
+
+            <label for="curriculo">Digite seu currículo resumido:</label><br>
+            <textarea name="curriculo" id="curriculo" cols="40" rows="4"></textarea><br>
+
+            <label for="navegador">Navegador preferido:</label>
+            <input id="navegador" list="navegadores" name="navegador">
+            <datalist id="navegadores">
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Edge"></option>
+            </datalist><br>
+
+            <input type="submit" value="Envie">
+            <input type="reset" value="Limpar">
+            <button type="button" onclick="">Botão para script</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
