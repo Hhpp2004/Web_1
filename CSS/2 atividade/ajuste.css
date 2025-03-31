@@ -1,0 +1,42 @@
+body{
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #333;
+    border-bottom: 2 px solid #eee;
+    padding-bottom: 10px;
+}
+
+.lista_container ol{
+    font-weight: bold;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.lista-itens::before{
+    counter-increment:section;
+    content: counter(section)". ";
+}
+
+.lista-itens li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
+.lista-itens li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;  /* Ajuste conforme necessário */
+    height: 16px; /* Ajuste conforme necessário */
+    background-image: url('Icones/casa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
