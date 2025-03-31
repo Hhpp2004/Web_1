@@ -5,42 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .blue-text {
-            color: blue;
+        lista-casa{
+            list-style-type: square;
+            list-style-position: inside;
+            list-style-image:url('./Icones/casa.png');  
+            list-style: square inside url('./Icones/casa.png');  
         }
-        #lista-casa li::before{
-            background-image: url('./Icones/casa.png');
+        caption{
+            color: red;
         }
     </style>
     <h1 class="blue-text">
 <body>
-    <h1 style="color: blue;">
-        Listas
-    </h1>
+   <div id="div1" class="divLista">
+    <p>
+        <h2 style="color: blue;">Listas</h2>
+    </p>
     <ol type="1">
-        <li>Na sala de estar:
-            <ul id="lista-casa">
-                <li>Sofá</li>
-                <li>Rack</li>
-                <li>Televisão</li>
-            </ul>
-        </li>
         <li>
-            Na área de serviço
-            <ul>
-                <li>Tanque</li>
-            </ul>
-            <ul>
-                <li>
-                    Máquina de lavar
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Varal
-                </li>
-            </ul>
+            Na sala de estar:
         </li>
+        <ul>
+            <li>Sofá</li>
+            <li>Rack</li>
+            <li>Televisão</li>
+        </ul>
+        <li>
+            Na área de serviço:
+        </li>
+        <ul>
+            <li>Tanque</li>
+            <li>Máquina de Lava</li>
+            <li>Varal</li>
+        </ul>
     </ol>
+   </div>
 </body>
 </html>
