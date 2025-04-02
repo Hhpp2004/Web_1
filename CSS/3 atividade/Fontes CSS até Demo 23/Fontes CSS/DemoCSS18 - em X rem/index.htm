@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* Evite usar tamanho de fonte em pixel, pois assim você anula a personalização que o usuário faz no navegador. */
+            font-size: 16px;
+        }
+
+        ol {
+            font-size: 2rem;
+        }
+
+        ul {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 2rem;
+        }
+
+        /* #botao{
+            border: solid 1px black;
+            display: inline-block;
+            font-size: 16px;
+            padding: 0 4em;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Em e Rem</h1>
+    <p>Em é uma unidade relativa de medida, ou seja 1em pode ter tamanhos diferentes dependendo do contexto. O valor default de 1em é igual ao da font-size do elemento pai.</p>
+    <p>A rem ("root em") é o tamanho de fonte do elemento-raiz do documento.</p>
+    <h2>Minemônico:</h2>
+    <p>em = <b>medida equivalente</b> ao elemento pai.</p>
+    <p>rem = <b>medida equivalente</b> ao elemento <b>raiz</b>.</p>
+    <ol>
+        <li>Item 1</li>
+        <ul>
+            <li>Subitem a</li>
+            <li id="botao">Subitem b</li>
+        </ul>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type=submit]:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado">
+            <option value="mg">MG</option>
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+        </select>
+
+        <input type="submit" value="Envie">
+    </form>
+
+</body>
+
+</html>

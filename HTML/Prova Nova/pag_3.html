@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>
@@ -15,44 +17,48 @@
         <h2>
             Formulário
         </h2>
-        <fieldset>
-            <legend>Viagem</legend>
-            
-            <form action="" method="get">
+        <form action="" method="get">
+                <fieldset>
+                <legend>Viagem</legend>
                 <label for="cidade">Cidade: </label>
-            <input type="text" name="cidade" id="cidade" required>        <td>Obrigatorio</td><br>
-            <label for="cep">CEP </label>
-            <input type="text" name="cep" id="cep" placeholder="12345-123" pattern="\d{5}-\d{3}"><td>Exigir este formato no preenchimento</td><br>
-            <label for="praia">Praia: </label>
-            <input type="text" name="praia" id="praia" required><td>Obrigatorio</td><br>
+                <input type="text" name="cidade" id="cidade" required>
+                <td>Obrigatorio</td><br>
+                <label for="cep">CEP </label>
+                <input type="text" name="cep" id="cep" placeholder="12345-123" pattern="\d{5}-\d{3}">
+                <td>Exigir este formato no preenchimento</td><br>
+                <label for="praia">Praia: </label>
+                <input type="text" name="praia" id="praia" required>
+                <td>Obrigatorio</td><br>
 
-            <br>
-            <img src="Fontes HTML até Demo 04/Fontes HTML/_Midias/praia.jpg" alt="praia de Fernando de Noronha" height="200" width="300">
+                <br>
+                <img src="Fontes HTML até Demo 04/Fontes HTML/_Midias/praia.jpg" alt="praia de Fernando de Noronha"
+                    height="200" width="300">
 
-            <br>
-            <label for="trans">Transporte</label>
-            <br>
-            <input type="radio" name="van" id="van" value="van">
-            <label for="van">Van</label>
-            <input type="radio" name="micro" id="micro" value="micro-onibus">
-            <label for="micro">Micro-ônibus</label>
-            <input type="radio" name="buggy" id="buggy" value="buggy">
-            <label for="buggy">Buggy</label>
-            
-            <br>
-                
-            <label for="obs">Observações médicas:</label>
-            <br>
-            <textarea name="obs" id="obs" cols="40" rows="4"></textarea>
+                <br>
+                <label for="trans">Transporte</label>
+                <br>
+                <input type="radio" name="trans" id="van" value="van">
+                <label for="van">Van</label>
+                <input type="radio" name="trans" id="micro" value="micro-onibus">
+                <label for="micro">Micro-ônibus</label>
+                <input type="radio" name="trans" id="buggy" value="buggy">
+                <label for="buggy">Buggy</label>
+
+                <br>
+
+                <label for="obs">Observações médicas:</label>
+                <br>
+                <textarea name="obs" id="obs" cols="40" rows="4"></textarea>
         </fieldset>
         <br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
-    </form>
+        </form>
     </section>
-<br>
+    <br>
     <footer>
         <a href="index.html">Voltar para página principal</a>
     </footer>
 </body>
+
 </html>

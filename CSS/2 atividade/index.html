@@ -1,46 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .blue-text {
+        .lista {
+            font-size: small;
+        }
+
+        .legend {
+            font-size: medium;
+            color: red;
+        }
+
+        .lista-casa {
+            font-size: small;
+            font-style: oblique;
+            list-style-type: square;
+            list-style-position: inside;
+            list-style-image: url('casa.png');
+            list-style: square inside url('casa.png');
+        }
+
+        .background {
+            align-items: center;
+            font-size: medium;
+            background-color: rgb(0, 54, 0);
+            color: white;
+        }
+
+        .background_2 {
+            align-content: center;
+            font-size: medium;
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .IFTM {
+            background-color: aqua;
             color: blue;
+            font-size: small;
+            font-weight: normal;
+            padding: 15px;
         }
-        #lista-casa li::before{
-            background-image: url('./Icones/casa.png');
+
+        .td {
+            font-size: medium;
+            text-align: right;
+            background-color: gray
         }
+
+        .IFTM_2 {
+            background-color: aquamarine;
+            color: blue;
+            font-size: small;
+            font-weight: normal;
+            padding: 15px;
+        }
+        p{
+            border-style: solid;
+        }
+        .borda{
+            border: 1px solid;
+            border-radius: 10px 10px;
+            border-color: black;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            font-size: small;
+        }
+
     </style>
     <h1 class="blue-text">
+
 <body>
-    <h1 style="color: blue;">
-        Listas
-    </h1>
-    <ol type="1">
-        <li>Na sala de estar:
-            <ul id="lista-casa">
-                <li>Sofá</li>
-                <li>Rack</li>
-                <li>Televisão</li>
-            </ul>
-        </li>
-        <li>
-            Na área de serviço
-            <ul>
-                <li>Tanque</li>
-            </ul>
-            <ul>
-                <li>
-                    Máquina de lavar
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Varal
-                </li>
-            </ul>
-        </li>
-    </ol>
+    <section>
+        <h2 style="color: blue;">Listas</h2>
+        <ol type="1">
+            <li class="lista">
+                Na sala de estar:
+                <ul class="lista-casa">
+                    <li>Sofá</li>
+                    <li>Rack</li>
+                    <li>Televisão</li>
+                </ul>
+            </li>
+            <li class="lista">
+                Na área de serviço:
+                <ul class="lista-casa">
+                    <li>Tanque</li>
+                    <li>Máquina de Lava</li>
+                    <li>Varal</li>
+                </ul>
+            </li>
+        </ol>
+        <h2 style="color: blue;">Tabelas</h2>
+        <table border="1">
+            <caption class="legend">Tabela de Preço</caption>
+            <thead>
+                <tr>
+                    <th class="background">Item</th>
+                    <th class="background">Produto</th>
+                    <th class="background">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="background_2">01</td>
+                    <td class="background_2">Tropete</td>
+                    <td class="background_2" style="text-align: right;">500,00</td>
+                </tr>
+                <tr style="font-size: medium;">
+                    <td>02</td>
+                    <td>Trombone</td>
+                    <td style="text-align: right;">640,00</td>
+                </tr>
+                <tr>
+                    <td class="background_2">03</td>
+                    <td class="background_2">Trompa</td>
+                    <td class="background_2" style="text-align: right;">650,00</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td">Total</td>
+                    <td class="td">1790,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 style="color: blue;">
+            Links
+        </h2>
+        <p style="font-size: small;">Se a largura não acompanhar, use o comando display: inline-block;</p>
+        <a href="https://virtualif.iftm.edu.br/VRTL/?modulo=ALUNO_NOVO" class="IFTM">Link para o IFTM</a>
+        <br>
+        <br>
+        <a href="https://www.w3schools.com" class="IFTM_2">Link para o w3school</a>
+        <br>
+        <br>
+        <h2 style="color: blue;">Bordas</h2>
+        <p id="id1" class="borda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis aut, ipsa et, asperiores animi quam, ducimus sit est eum numquam ipsam ut qui culpa dolores eaque sapiente. Porro, repudiandae iure!</p>
+    </section>
 </body>
+
 </html>

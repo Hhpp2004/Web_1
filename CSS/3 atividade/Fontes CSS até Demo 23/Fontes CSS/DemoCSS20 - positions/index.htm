@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Não se preocupe com esta formatação abaixo Início e Fim*/
+        /* Início */
+        * {
+            box-sizing: border-box;
+        }
+
+        .container1,
+        .container2 {
+            background-color: yellow;
+            height: 375px;
+            width: 380px;
+
+        }
+
+        .item {
+            font-size: 0.87rem;
+            display: inline-block;
+            background-color: aquamarine;
+            padding: 5px;
+            width: 120px;
+            height: 120px;
+            vertical-align: middle;
+            margin: 2px;
+            border: solid 1px black;
+        }
+
+        /* Fim */
+
+        .item1c1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .item2c1 {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+
+        .item8c1 {
+            /* position: fixed; */
+        }
+
+        .item5c1 {
+            /* position: sticky; */
+            top: 0;
+        }
+
+        body {
+            /* overflow-x: hidden; */
+        }
+
+        .item1c2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .item2c2 {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            /* z-index: -1; */
+        }
+
+        .container2 {
+            position: relative;
+        }
+
+        .item3c2 {
+            position: relative;
+            top: 60px;
+            left: 60px;
+        }
+
+        .item4c2 {
+            /* Comente a linha abaixo para que o rodapé seja exibido.  */
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            margin: 0;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positions</h1>
+    <div class="container1">
+        <div class="item item1c1">Item 1c1 - absoluto bottom e right=0. Sem elemento pai relativo então pega em relação à janela.</div>
+        <div class="item item2c1">Item 2c1 - absoluto top e right = -15px. Sem elemento pai relativo então pega em relação à janela.</div>
+        <div class="item item3c1">Item 3c1</div>
+        <div class="item item4c1">Item 4c1</div>
+        <div class="item item5c1">Item 5c1</div>
+        <div class="item item6c1">Item 6c1</div>
+        <div class="item item7c1">Item 7c1</div>
+        <div class="item item8c1">Item 8c1</div>
+        <div class="item item9c1">Item 9c1</div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container2">
+        <div class="item item1c2">Item 1c2 - absoluto bottom e right=0. Com elemento pai relativo.</div>
+        <div class="item item2c2">Item 2c2 - absoluto top e right = -15px. Com elemento pai relativo.</div>
+        <div class="item item3c2">Item 3c2</div>
+        <div class="item item4c2">Item 4c2 - Fixo, com bottom e left = 0. Sem margem, 100% de largura e sem borda. Posso usar como um cabeçalho ou um rodapé.</div>
+        <div class="item item5c2">Item 5c2</div>
+        <div class="item item6c2">Item 6c2</div>
+        <div class="item item7c2">Item 7c2</div>
+        <div class="item item8c2">Item 8c2</div>
+        <div class="item item9c2">Item 9c2</div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, modi ex! Placeat provident impedit eaque odio itaque quo pariatur rerum, perferendis optio exercitationem incidunt iure in voluptatibus est excepturi atque?</p>
+</body>
+
+</html>
