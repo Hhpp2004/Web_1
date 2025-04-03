@@ -6,45 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .blue-text {
-            color: blue;
-        }
-        #lista-casa li::before{
-            background-image: url('./Icones/casa.png');
+        .lista-casa {
+            list-style-type: square;
+            list-style-position: inside;
+            list-style: square inside url('casa.png');
+            list-style-image: url('casa.png');
         }
 
+        .tabela {
+            border-collapse: collapse;
+        }
+
+        .tabela_1 {
+            text-align: center;
+            width: 25%;
+            padding: 5px;
+            background-color: darkgreen;
+            color: white
+        }
+
+        .td {
+            width: 25%;
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+
+        .td_2 {
+            width: 25%;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .td_3 {
+            width: 25%;
+            padding: 5px;
+            background-color: gray;
+            text-align: right;
+        }
+
+        .links{
+            background-color: aqua;
+            color: blue;    
+            display: inline-block;    
+            text-align: center;
+            block-size: auto;
+            padding: 15px 30px;
+            text-decoration: none;
+        }
+        a:hover,:active{
+            background-color: aquamarine;
+        }
+        .bordas{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: auto;
+            width: 250px;
+            height: 110px;
+            text-align: center;
+        }
     </style>
-    <h1 class="blue-text">
 
 <body>
+    <section>
+        <h1 style="color: blue;">
+            Listas
+        </h1>
+        <ol type="1">
+            <li>Na sala de estar:
+                <ul class="lista-casa">
+                    <li>Sofá</li>
+                    <li>Rack</li>
+                    <li>Televisão</li>
+                </ul>
+            </li>
+            <li>
+                Na área de serviço
+                <ul class="lista-casa">
+                    <li>Tanque</li>
+                    <li>Máquina de lavar</li>
+                    <li>Varal</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h1 style="color:blue">
+            Tabelas
+        </h1>
+        <table border="1" style="border-color: black;" class="tabela">
+            <caption style="color: red;">
+                <strong>
+                    Tabela de Preço
+                </strong>
+            </caption>
+            <thead>
+                <tr>
+                    <th class="tabela_1">Item</th>
+                    <th class="tabela_1">Produto</th>
+                    <th class="tabela_1">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td">01</td>
+                    <td class="td">Tropete</td>
+                    <td style="text-align: right;" class="td">500,00</td>
+                </tr>
+                <tr>
+                    <td class="td_2">02</td>
+                    <td class="td_2">Trombone</td>
+                    <td class="td_2" style="text-align: right;">640,00</td>
+                </tr>
+                <tr>
+                    <td class="td">03</td>
+                    <td class="td">Trompa</td>
+                    <td class="td" style="text-align: right;">650,00</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_3">Total</td>
+                    <td class="td_3">1790,00</td>
+                </tr>
+            </tbody>
+        </table>
+    
     <h1 style="color: blue;">
-        Listas
+        Links
     </h1>
-    <ol type="1">
-        <li>Na sala de estar:
-            <ul id="lista-casa">
-                <li>Sofá</li>
-                <li>Rack</li>
-                <li>Televisão</li>
-            </ul>
-        </li>
-        <li>
-            Na área de serviço
-            <ul>
-                <li>Tanque</li>
-            </ul>
-            <ul>
-                <li>
-                    Máquina de lavar
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Varal
-                </li>
-            </ul>
-        </li>
-    </ol>
+    <a href="https://virtualif.iftm.edu.br/VRTL/" class="links">
+        Link para o IFTM.
+    </a>
+    <br>
+    <br>
+    <a href="https://www.w3schools.com" class="links">
+        Link para o w3school.
+    </a>
+    <br>
+    <h1 style="color:blue;">Bordas</h1>
+    <p class="bordas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut minima culpa recusandae error enim porro, voluptate eaque quia ab ipsa officia, architecto sapiente molestias doloribus itaque nulla. Quae, itaque dolore.</p>
+    </section>
 </body>
 
 </html>
