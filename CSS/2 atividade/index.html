@@ -15,6 +15,7 @@
 
         .tabela {
             border-collapse: collapse;
+            border-color: black;
         }
 
         .tabela_1 {
@@ -58,17 +59,26 @@
         }
         .bordas{
             border: 1px solid black;
-            border-radius: 5px;
+            border-radius: 15px;
             margin: auto;
             width: 250px;
-            height: 110px;
+            /*height: 110px;*/
             text-align: center;
+        }
+        .cor{
+            color: blue;
+        }
+        .cor_2{
+            color: red;
+        }
+        .th{
+            text-align: right;
         }
     </style>
 
 <body>
     <section>
-        <h1 style="color: blue;">
+        <h1 class="cor">
             Listas
         </h1>
         <ol type="1">
@@ -89,11 +99,11 @@
             </li>
         </ol>
 
-        <h1 style="color:blue">
+        <h1 class="cor">
             Tabelas
         </h1>
-        <table border="1" style="border-color: black;" class="tabela">
-            <caption style="color: red;">
+        <table border="1" class="tabela">
+            <caption class="cor_2">
                 <strong>
                     Tabela de Preço
                 </strong>
@@ -106,20 +116,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="td">01</td>
-                    <td class="td">Tropete</td>
-                    <td style="text-align: right;" class="td">500,00</td>
+                <tr class="td">
+                    <td>01</td>
+                    <td>Tropete</td>
+                    <td class="th">500,00</td>
                 </tr>
-                <tr>
-                    <td class="td_2">02</td>
-                    <td class="td_2">Trombone</td>
-                    <td class="td_2" style="text-align: right;">640,00</td>
+                <tr class="td_2">
+                    <td>02</td>
+                    <td>Trombone</td>
+                    <td class="th">640,00</td>
                 </tr>
-                <tr>
-                    <td class="td">03</td>
-                    <td class="td">Trompa</td>
-                    <td class="td" style="text-align: right;">650,00</td>
+                <tr class="td">
+                    <td>03</td>
+                    <td>Trompa</td>
+                    <td class="th">650,00</td>
                 </tr>
                 <tr>
                     <td colspan="2" class="td_3">Total</td>
@@ -128,7 +138,7 @@
             </tbody>
         </table>
     
-    <h1 style="color: blue;">
+    <h1 class="cor">
         Links
     </h1>
     <a href="https://virtualif.iftm.edu.br/VRTL/" class="links">
@@ -140,7 +150,7 @@
         Link para o w3school.
     </a>
     <br>
-    <h1 style="color:blue;">Bordas</h1>
+    <h1 class="cor">Bordas</h1>
     <p class="bordas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut minima culpa recusandae error enim porro, voluptate eaque quia ab ipsa officia, architecto sapiente molestias doloribus itaque nulla. Quae, itaque dolore.</p>
     </section>
 </body>
