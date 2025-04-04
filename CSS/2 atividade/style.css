@@ -1,11 +1,11 @@
 .lista-casa {
     list-style-type: square;
     list-style-position: inside;
-    list-style: square inside url('casa.png');
     list-style-image: url('casa.png');
 }
 
 .tabela {
+    border: 1 solid black;
     border-collapse: collapse;
     border-color: black;
 }
@@ -20,19 +20,16 @@
 
 .td {
     width: 25%;
-    padding: 5px;
     background-color: antiquewhite;
 }
 
 .td_2 {
     width: 25%;
-    padding: 5px;
     background-color: white;
 }
 
 .td_3 {
     width: 25%;
-    padding: 5px;
     background-color: gray;
     text-align: right;
 }
@@ -46,7 +43,8 @@
     padding: 15px 30px;
     text-decoration: none;
 }
-a:hover,:active{
+a:hover,
+a:active{
     background-color: aquamarine;
 }
 .bordas{
@@ -57,10 +55,10 @@ a:hover,:active{
     /*height: 110px;*/
     text-align: center;
 }
-.cor{
+.h1{
     color: blue;
 }
-.cor_2{
+.h2{
     color: red;
 }
 .th{
