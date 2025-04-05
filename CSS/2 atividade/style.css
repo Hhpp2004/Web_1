@@ -1,66 +1,75 @@
-.lista-casa {
-    list-style-type: square;
-    list-style-position: inside;
-    list-style-image: url('casa.png');
+/* Lista */
+
+h1{
+    color: blue;
 }
 
-.tabela {
-    border: 1 solid black;
+div{
+    list-style-image: url('Icones/casa.png');
+}
+
+
+/* Tabela */
+caption{
+    color: red;
+}
+
+th,td,table{
+    border: 1px solid black;
     border-collapse: collapse;
-    border-color: black;
+    height: 40px;
 }
 
-.tabela_1 {
-    text-align: center;
-    width: 25%;
-    padding: 5px;
-    background-color: darkgreen;
-    color: white
+th{
+    width: 40%;
 }
 
-.td {
-    width: 25%;
-    background-color: antiquewhite;
+td{
+    width: 40%;
 }
 
-.td_2 {
-    width: 25%;
-    background-color: white;
-}
-
-.td_3 {
-    width: 25%;
+tfoot{
     background-color: gray;
     text-align: right;
 }
 
-.links{
+td:nth-of-type(3)
+{
+    text-align: right;
+}
+
+tbody>tr:nth-child(odd)
+{
+    background-color: antiquewhite;
+}
+
+thead{
+    color: white;
+    background-color: darkgreen;
+}
+
+/* Links */
+
+a{
     background-color: aqua;
-    color: blue;    
-    display: inline-block;    
+    color: blue;
+    display: inline-block;
     text-align: center;
     block-size: auto;
     padding: 15px 30px;
     text-decoration: none;
 }
-a:hover,
-a:active{
+
+a:hover,a:active{
     background-color: aquamarine;
 }
-.bordas{
+
+/* Bordas */
+
+p{
     border: 1px solid black;
     border-radius: 15px;
     margin: auto;
     width: 250px;
-    /*height: 110px;*/
     text-align: center;
-}
-.h1{
-    color: blue;
-}
-.h2{
-    color: red;
-}
-.th{
-    text-align: right;
 }
