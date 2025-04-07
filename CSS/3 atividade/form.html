@@ -16,77 +16,61 @@
         <form action="" method="get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                    <label for="nome">
-                        <strong>
-                            Nome:
-                        </strong>
-                    </label>
-                    <br>
-                    <input type="text" name="nome" id="nome" required class="input">
-                    <br>
-                    <label for="data">
-                        <strong>
-                            Data de Nascimento:
-                        </strong>
-                    </label>
-                    <br>
-                    <input type="date" name="data" id="data" class="input">
-                    <br>
-                    <label for="qtd_filhos">
-                        <strong>
-                            Quantidade de Filhos
-                        </strong>
-                    </label>
-                    <br>
-                    <input type="number" name="qtd_filhos" id="qtd_filhos" nim="0" max="10" set="1" class="input">
-                    <br>
-                    <label for="sexo">
-                        <strong>
-                            Sexo:
-                        </strong>
-                    </label>
-                    <br>
-                    <select name="sexo" id="sexo" class="input">
-                        <option value="">Escolha...</option>
-                        <option value="masc">Masculino</option>
-                        <option value="fem">Feminino</option>
-                    </select>
-                    <br>
-                    <label for="tel">
-                        <strong>
-                            Telefone:
-                        </strong>
-                    </label>
-                    <br>
-                    <input type="tel" name="tel" id="tel" placeholder="(34) 1234-5678" class="input">
-                    <br>
-                    <label for="senha">
-                        <strong>
-                            Senha:
-                        </strong>
-                    </label>
-                    <br>
-                    <input type="password" name="senha" id="senha" class="input">
-                <br>
-                <label for="tipo">
-                    <strong>
-                        Tipo sanguíneo
-                    </strong>
+                <label for="nome" class="label">
+                    Nome:
                 </label>
                 <br>
-                <input type="radio" name="a" id="a">
+                <input type="text" name="nome" id="nome" required class="input">
+                <br>
+                <label for="data" class="label">
+                    Data de Nascimento:
+                </label>
+                <br>
+                <input type="date" name="data" id="data" class="input">
+                <br>
+                <label for="qtd_filhos" class="label">
+                    Quantidade de Filhos:
+                </label>
+                <br>
+                <input type="number" name="qtd_filhos" id="qtd_filhos" nim="0" max="10" set="1" class="input">
+                <br>
+                <label for="sexo" class="label">
+                    Sexo:
+                </label>
+                <br>
+                <select name="sexo" id="sexo" class="input">
+                    <option value="">Escolha...</option>
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                </select>
+                <br>
+                <label for="tel" class="label">
+                    Telefone:
+                </label>
+                <br>
+                <input type="tel" name="tel" id="tel" placeholder="(34) 1234-5678" class="input">
+                <br>
+                <label for="senha" class="label">
+                    Senha:
+                </label>
+                <br>
+                <input type="password" name="senha" id="senha" class="input">
+                <br>
+                <label for="tipo" class="label">
+                    Tipo sanguíneo
+                </label>
+                <br>
+                <input type="radio" name="tipo" id="a">
                 <label for="a">A</label>
-                <input type="radio" name="b" id="b">
+                <input type="radio" name="tipo" id="b">
                 <label for="b">B</label>
-                <input type="radio" name="ab" id="ab">
+                <input type="radio" name="tipo" id="ab">
                 <label for="ab">AB</label>
-                <input type="radio" name="O" id="O">
+                <input type="radio" name="tipo" id="O">
                 <label for="O">O</label>
                 <br>
-                <label for="area">
-                    <strong>
-                        Área de interesse
-                    </strong>
+                <label for="area" class="label">
+                    Área de interesse
                 </label>
                 <br>
                 <input type="checkbox" name="bio" id="bio">
@@ -96,13 +80,11 @@
                 <input type="checkbox" name="his" id="his">
                 <label for="his">História</label>
                 <br>
-                <label for="obs">
-                    <strong>
-                        Observações:
-                    </strong>
+                <label for="obs" class="label">
+                    Observações:
                 </label>
                 <br>
-                <input type="text" name="obs" id="obs" class="obs">
+                <textarea name="obs" id="obs"></textarea>
                 <br>
                 <br>
                 <button type="submit">Enviar</button>
