@@ -57,7 +57,7 @@ fieldset{
     width: 300px;
 }
 
-.label{
+label{
     font-weight: bold;
 }
 
@@ -75,6 +75,11 @@ button{
     border-radius:3px;
     height: 35px;
     width: 100px;
+}
+
+.radioandcheck{
+    margin-right: 15px;
+    font-weight: normal;
 }
 
 textarea{
