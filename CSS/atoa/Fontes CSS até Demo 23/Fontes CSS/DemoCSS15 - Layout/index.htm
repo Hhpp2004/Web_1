@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #estatico {
+            position: static;
+            /* Mesmo definindo left o static não usa */
+            left: 25px;
+            width: 250px;
+            border: 1px solid black;
+        }
+
+        #fixo {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            height: 50px;
+            width: 200px;
+            border: 3px solid blue;
+        }
+
+        #relativo {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 20px;
+            top: 40px;
+            border: 2px solid green;
+        }
+
+        #absoluto {
+            position: absolute;
+            top: 60px;
+            right: 0px;
+            width: 200px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="estatico">Posição estática. Usa o fluxo normal e não usa as propriedades de posições.</p>
+    <p id="fixo">Posição fixa. Posição em relação à janela.</p>
+    <div id="relativo">Posição relativa. Posição em relação à página.
+        <div id="absoluto">Posição absoluta. Posição em relação ao elemento pai.</div>
+    </div>
+    <p>O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static. O padrão é position: static.</p>
+</body>
+
+</html>

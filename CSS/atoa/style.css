@@ -1,0 +1,41 @@
+/* index */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header,footer{
+    background-color: gray;
+    text-align: center;
+    padding: 30px  0;
+}
+
+a{
+    text-align: center;
+    background-color: aqua;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: right;
+    text-decoration: none;  
+    margin-left: 10px;  
+    color: black;
+    margin-top: 5px;
+}
+
+aside, article{
+    padding: 100px 10px;
+    float: left;
+}
+
+article{
+    font-size: medium;
+    padding: 130px 10px;
+}
+
+footer{
+    clear: both;
+}
+
+/* Página 1*/
