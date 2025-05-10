@@ -1,0 +1,158 @@
+/* Index */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, .footer{
+    background-color: rgb(221, 219, 219);
+    padding: 30px 0;
+    text-align: center;
+}
+
+#a1, #a2, #a3{
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: aqua;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    font-size: small;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+aside, article
+{
+    margin-top: 30px;
+    float: left;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+}
+
+.p{
+    font-size: large;
+    font-weight: bold;
+    padding: 25px 0px;
+}
+
+.footer{
+    clear: both;
+}
+
+/* Página 1 */
+strong{
+    color: blue;
+}
+
+mark{
+    background-color: greenyellow;
+}
+
+#p
+{
+    border-width: 7px;
+    border-color: red;
+    border-top-style: solid;
+    border-right-style: solid;
+}
+
+#p2
+{
+    border-width: 7px;
+    border-color: blue;
+    border-bottom-style: solid;
+    border-left-style: solid ;
+}
+
+/* Página 2*/
+li{
+    list-style-position: inside;
+    list-style-type: decimal;
+    color: red;
+}
+
+#ul{
+    list-style-position: inside;
+    list-style-type: disc;
+    color: red;
+    margin-left: 50px;
+}
+
+.ul{
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-left: 50px;
+    color:blue;
+}
+
+caption{
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+table, th, tr, .td, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th{    
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+}
+
+.td{
+    height: 35px;
+    text-align: center;
+}
+
+tr{
+    background-color: white;
+    color: black;
+    padding: 10px 50px;
+}
+
+tr:hover,tr:active{
+    background-color: rgb(221, 219, 219);
+}
+
+.th1
+{
+    padding: 10px 100px;
+}
+
+/* Página 3 */
+
+fieldset{
+    border-color: blue;
+}
+
+.label{
+    font-weight: bold;
+    color:blue;
+
+}
+
+#label{
+    color: black;
+}
+
+.input, textarea{
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: bisque;
+    border-style: dotted;
+}
+
+input{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}

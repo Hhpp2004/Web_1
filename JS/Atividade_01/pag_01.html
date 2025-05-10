@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <label for="num">N1:</label>
+        <input type="number" name="num" id="num">
+        <label for="num_2">N2:</label>
+        <input type="number" name="num_2" id="num_2">
+        <label for="text">Texto:</label>
+        <input type="text" name="text" id="text">
+        <br>
+        <p>
+            Use o método
+            <strong>
+                parseInt()
+            </strong>
+            para converter texto em número caso necessário.
+        </p>
+        <br>
+
+        <label for="opc">Cálculos:</label>
+        <button type="button" id="opc" onclick="soma()">Soma</button>
+        <button type="button" id="opc" onclick="subtracao()">Subtração</button>
+        <button type="button" id="opc" onclick="multiplicacao()">Multiplicação</button>
+        <button type="button" id="opc" onclick="divisao()">Divisão</button>
+        <button type="button" id="opc" onclick="soma_intervalo()">Soma os números do intervalo</button>
+        <button type="button" id="opc" onclick="fatorial()">Calcule o fatorial de N1</button>
+        <br>
+        <br>
+        <label for="intervalo">Lista de intervalo:</label>
+        <button type="button" id="intervalo" onclick="mostrartodos()">Todos os números de N1 a N2</button>
+        <button type="button" id="intervalo" onclick="mostrapares()">Pares de N1 a N2</button>
+        <button type="button" id="intervalo" onclick="multicinco()">Múltiplos de cinco de N1 a N2</button>
+        <br>
+        <br>
+        <label for="alert">Texto:</label>
+        <button type="button" id="alert" onclick="verifica()">Mostre o nome num alert se o mesmo tiver menos que 10 caracteres. Caso
+        contrário avise sobre o erro.
+        </button>
+        <br>
+        <p>
+            A lista de intervalo deve aparecer abaixo e no console (use F12 para conferir). O resultado dos cálculos
+            deve aparecer num alert.
+        </p>
+        <br>
+        <p>
+            Lista de intervalo aqui...
+        </p>
+        <br>
+        <p id="lista_num"></p>
+        <script src="operacao.js"></script>
+    </section>
+</body>
+
+</html>
