@@ -1,3 +1,4 @@
+var teste;
 function pega_valores() {
     var n1 = parseInt(document.getElementById("num").value)
     var n2 = parseInt(document.getElementById("num_2").value)
@@ -90,9 +91,11 @@ function multicinco()
     document.getElementById("lista_num").innerHTML = list.join("<br>")
 }
 
+
+
 function verfica()
 {
-    let texto = document.getElementById("alert").value;
+    let texto = document.getElementById("text").value;
     if (texto.length < 10) {
         alert("Texto: " + texto);
     } else {
