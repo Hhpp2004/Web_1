@@ -76,6 +76,7 @@ function mostrapares()
     document.getElementById("lista_num").innerHTML = list.join("<br>")
 }
 
+
 function multicinco()
 {
     var {n1,n2} = pega_valores()
@@ -91,9 +92,8 @@ function multicinco()
     document.getElementById("lista_num").innerHTML = list.join("<br>")
 }
 
-
-
-function verfica()
+var oal
+function verifica()
 {
     let texto = document.getElementById("text").value;
     if (texto.length < 10) {
