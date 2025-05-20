@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Use o método <b>push</b> para incluir o elemento ao final da matriz ou do objeto.</p><hr>
+<label for="campo1">Campo:</label> <input type="text" name="campo1" id="campo1">
+<button onclick="addMatriz()">Inseri na matriz</button>
+<p id="p1"></p>
+<hr>
+<label for="nome">Nome:</label> <input type="text" name="nome" id="nome"><br>
+<label for="idade">Idade:</label> <input type="number" name="idade" id="idade">
+<button onclick="addObjeto()">Inseri no Objeto</button>
+<p id="p2"></p>
+<script>
+const matriz1 = [1,2,3];
+const objeto1 = [{nome:"João", idade:50},{nome:"Ana", idade:23}]
+document.getElementById("p1").innerHTML = "Matriz: " + matriz1;
+document.getElementById("p2").innerHTML = "Tamanho do Objeto:" + objeto1.length; 
+function addMatriz() {
+matriz1.push(parseInt(document.getElementById("campo1").value));
+document.getElementById("p1").innerHTML = "Matriz: " + matriz1;
+}
+function addObjeto() {
+let nome1 = document.getElementById("nome").value;
+let idade1 = parseInt(document.getElementById("idade").value);
+objeto1.push({nome:nome1, idade:idade1});
+document.getElementById("p2").innerHTML = "Tamanho do Objeto:" + objeto1.length; 
+}
+</script>
+
+</body>
+</html>
