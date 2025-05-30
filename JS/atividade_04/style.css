@@ -1,0 +1,14 @@
+.cores {
+    border: 1px solid black;
+    padding: 40px 40px;
+    margin: 10px ;
+    display: inline-block;
+}
+
+.quadrado {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+}
