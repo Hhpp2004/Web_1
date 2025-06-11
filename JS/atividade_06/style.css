@@ -1,0 +1,20 @@
+fieldset {
+  border-color: cyan;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.botao-lixo {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black; 
+  vertical-align: middle;
+}
+
+input {
+  margin: 2px;
+  padding: 2px 5px;
+}
