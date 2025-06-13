@@ -21,7 +21,7 @@ function criar_elemento()
         <input type="text" name="nome" class="nome">
         <label for="tele">Telefone: </label>
         <input type="tel" id="tele" class="tele">
-        <button type="button" class="botao-lixo" onclick="removerLinha(this)">
+        <button type="button" class="botao-lixo" onclick="removerLinha(event)">
             <i class="fas fa-trash-alt"></i>
         </button>
     `;

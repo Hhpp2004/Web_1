@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Exercício 1</p>
+    <form action="" method="get">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu texto aqui">
+        <button type="submit" onclick="verificar()">Testar</button>
+        <br>
+        <br>
+        <input placeholder="Digite seu cpf aqui" type="text" name="cpf" id="cpf" required>
+        <button type="submit" onclick="tamanho()">Testar</button>
+    </form>
+    <br>
+    <p>Exercício 2</p>
+    <input type="text" name="frase" id="frase" onkeyup="frase(this)">
+    <span id="span">0</span>
+    <br>
+    <p>Exercício 3</p>
+    <input type="text" name="entrada" id="entrada">
+    <button type="submit" onclick="separar()">Gerar</button>
+    <br>
+    <br>
+    <div id="i"></div>
+    <br>
+    <p>Exercício 4</p>
+    <label for="nome_4">Nome:</label>
+    <input type="text" name="nome_4" id="nome_4">
+    <br>
+    <label for="data">Data de Nascimento:</label>
+    <input type="datetime-local" name="data" id="data">
+    <br>
+    <label for="qtd">Qtde filhos:</label>
+    <input type="number" name="qtd" id="qtd">
+    <script src="main.js"></script>
+    <br>
+    <button type="submit" onclick="verificacao()">Enviar</button>
+</body>
+
+</html>
