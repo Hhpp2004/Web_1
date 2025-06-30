@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tarefas</h1>
+    </header>
+
+    <section id="idListaTarefas">
+        <ul id="idTarefas">
+            <li class="classeItemTarefa">
+                <span class="classeNome">
+                    <input type="checkbox">
+                    <label>Tarefa 1</label>
+                </span>
+                <span class="classeBotaoRemover" onclick="apagar_tudo()">remover</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="idAdicionaTarefa">
+        <form name="inserir" action="" method="get" id="idFormAdicionaTarefa">
+            <input type="text" id="idInsereNome" placeholder="Adicionar uma Tarefa...">
+            <button id="idBotaoInserir" type="button" onclick="addLista()">Inserir</button>
+        </form>
+    </section>
+
+    <section id="idTarefasConcluidas">
+        <button id="idBotaoExcluiTarefasConcluidas" type="button" onclick="apagar_tudo()">Excluir tarefas concluídas</button>
+    </section>
+
+    <footer>
+        <hr>
+        <ul class="classeGuias">
+            <li id="idDica1" class="classeAtivo" onclick="muda_cor(this)">Dica 01</li>
+            <li id="idDica2" onclick="muda_cor(this)">Dica 02</li>
+            <li id="idDica3" onclick="muda_cor(this)">Dica 03</li>
+        </ul>
+        <div class="classePainel classeAtivo" id="idDivDica1">
+            <p>Conteúdo da dica 01.</p>
+        </div>
+        <div class="classePainel" id="idDivDica2">
+            <p>Conteúdo da dica 02.</p>
+        </div>
+        <div class="classePainel" id="idDivDica3">
+            <p>Conteúdo da dica 03.</p>
+        </div>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+
+</html>

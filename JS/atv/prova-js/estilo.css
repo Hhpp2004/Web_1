@@ -1,0 +1,91 @@
+body {
+    font-family: Tahoma;
+    width: 500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+header {
+    background: gainsboro;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#idListaTarefas li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.classeBotaoRemover {
+    float: right;
+    background: green;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+#idAdicionaTarefa {
+    margin: 10px 0px;
+}
+
+#idFormAdicionaTarefa input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+}
+
+#idFormAdicionaTarefa button,
+#idBotaoExcluiTarefasConcluidas {
+    border: 1px solid green;
+    background: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    float: left;
+    margin: 20px 0;
+    color: white;
+}
+
+footer {
+    clear: both;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: gainsboro;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.classeGuias .classeAtivo {
+    background: grey;
+}
+
+.classePainel {
+    display: none;
+    border: 1px solid gainsboro;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.classePainel.classeAtivo {
+    display: block;
+}
