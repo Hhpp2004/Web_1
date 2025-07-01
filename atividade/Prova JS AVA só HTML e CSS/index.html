@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="estilo.css" rel="stylesheet" type="text/css">
-    <script src="codigo.js"></script>
+    <!-- <script src="codigo.js"></script> -->
 </head>
 
 <body>
@@ -24,12 +24,26 @@
         </ul>
     </section>
 
+    <section class="controle-visivel">
+        <label for="visivel">Ocultar tarefas: </label>
+        <input type="checkbox" name="visivel" id="visivel" onchange="visivel()">
+    </section>
+
     <section id="idAdicionaTarefa">
         <form name="inserir" action="" method="get" id="idFormAdicionaTarefa">
             <input type="text" id="idInsereNome" placeholder="Adicionar uma Tarefa...">
             <button id="idBotaoInserir" type="button" onclick="addLista()">Inserir</button>
         </form>
     </section>
+    <br>
+    <section id="idPesquisa">
+        <form action="" method="get" name="pesquisa" id="PesquisarTarefa">
+            <input type="text" id="pesquisar" placeholder="Pesquisar Tarefa ...">
+            <button id="botaoPesquisar" type="button" onclick="filtropesquisa()">Pesquisar</button>
+        </form>
+    </section>
+    
+    <div id="res"></div>
 
     <section id="idTarefasConcluidas">
         <button id="idBotaoExcluiTarefasConcluidas" type="button" onclick="apagar_tudo()">Excluir tarefas concluídas</button>

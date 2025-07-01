@@ -33,11 +33,11 @@ ul {
     color: white;
 }
 
-#idAdicionaTarefa {
+#idAdicionaTarefa  {
     margin: 10px 0px;
 }
 
-#idFormAdicionaTarefa input {
+#idFormAdicionaTarefa input  {
     display: block;
     margin: 20px 0;
     padding: 10px;
@@ -88,4 +88,44 @@ footer li {
 
 .classePainel.classeAtivo {
     display: block;
+}
+
+#idPesquisa {
+    margin: 10px 0px;
+    clear: both;
+}
+
+#PesquisarTarefa input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+}
+
+#PesquisarTarefa button {
+    border: 1px solid green;
+    background: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    float: left;
+    margin: 20px 0;
+    color: white;
+}
+
+#idPesquisa {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+#res {
+    width: 100%; 
+    margin-top: 10px; 
 }

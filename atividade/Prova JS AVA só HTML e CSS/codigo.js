@@ -75,3 +75,46 @@ function muda_cor(classe) {
     classe.className += " classeAtivo"
     painel.className += " classeAtivo"
 }
+
+function filtropesquisa(){
+    const aux = document.getElementById("pesquisar").value.trim().toUpperCase();
+    const lista = document.querySelectorAll("#idTarefas li");
+    const res = document.getElementById("res");
+
+    res.innerHTML = "";
+
+    if(aux === "")
+    {
+        res.style.display = "none";
+    }
+
+    const filtro =  Array.from(lista).filter(tarefa =>{
+        const nome = tarefa.querySelector("label").textContent.toUpperCase();
+        return nome.includes(aux);
+    });
+
+    if(filtro.length > 0)
+    {
+        const resultado = document.createElement("ul");
+        resultado.style.listStyle = "none";
+        resultado.style.padding = "0";
+
+        filtro.forEach(tarefa => {
+            const copia = tarefa.cloneNode(true);
+            resultado.appendChild(copia);
+        });
+        res.appendChild(resultado);
+        res.style.display = "block";
+    }
+    else
+    {
+        res.innerHTML = "<p>Nenhuma tarefa encontrado</p>"
+    }
+}
+
+function visivel()
+{
+    const check = document.getElementById("visivel");
+    const lista = document.getElementById("idListaTarefas");
+    lista.style.display = check.checked? 'none' : 'block';
+}
