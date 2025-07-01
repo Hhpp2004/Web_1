@@ -10,7 +10,7 @@ function addLista() {
                 <input type="checkbox">
                 <label>${dado}</label>
             </span>
-            <span class="classeBotaoRemover" onclick="apagar_tudo()">remover</span>
+            <span class="classeBotaoRemover" onclick="apagar(this)">remover</span>
         `;
         const ul = document.getElementById("idTarefas");
         ul.appendChild(li);
