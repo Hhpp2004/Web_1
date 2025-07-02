@@ -85,6 +85,7 @@ function filtropesquisa(){
 
     if(aux === "")
     {
+        res.innerHTML = "";
         res.style.display = "none";
     }
 
@@ -99,9 +100,11 @@ function filtropesquisa(){
         resultado.style.listStyle = "none";
         resultado.style.padding = "0";
 
-        filtro.forEach(tarefa => {
-            const copia = tarefa.cloneNode(true);
-            resultado.appendChild(copia);
+        filtro.forEach(aux2 => {
+            const nome = aux2.querySelector("label").textContent;
+            const li = document.createElement("li");
+            li.textContent = nome;
+            resultado.appendChild(li);
         });
         res.appendChild(resultado);
         res.style.display = "block";
