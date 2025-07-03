@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Prova de Múltipla Escolha
+    </h1>
+    <section>
+        <p>1. Qual é a capital do Brasil ?</p>
+        <form method="get">
+            <input name="pergunta1" type="radio">
+            <label for="rio">Rio De Janeiro</label>
+            <br>
+            <input name="pergunta1" type="radio" value="br">
+            <label for="br">Brasilia</label>
+            <br>
+            <input name="pergunta1" type="radio" value="sp">
+            <label for="sp">São Paulo</label>
+            <br>
+            <input name="pergunta1" type="radio" value="sl">
+            <label for="sl">Salvador</label>
+            <br>
+            <input name="pergunta1" type="radio" value="bh">
+            <label for="bh">Belo Horizonte</label>
+        </form>
+    </section>
+    <br>
+    <section>
+        <p>2. Qual é a maior floresta tropical do mundo ?</p>
+        <form method="get">
+            <input name="pergunta2" type="radio" value="fa">
+            <label for="fa">Floresta Amazonica</label>
+            <br>
+            <input name="pergunta2" type="radio" value="fo">
+            <label for="">Floresta do Congo</label>
+            <br>
+            <input name="pergunta2" type="radio" value="fd">
+            <label for="fd">Floresta de Diamanetina</label>
+            <br>
+            <input name="pergunta2" type="radio" value="fb">
+            <label for="fb">Floresta de Borneo</label>
+            <br>
+            <input name="pergunta2" type="radio" value="fv">
+            <label for="fv">Floresta de Valdrivan</label>
+        </form>
+    </section>
+    <br>
+    <section>
+        <p>3. Quem pintou a Nona Lisa ?</p>
+        <form method="get">
+            <input name="pergunta3" type="radio" valued="van">
+            <label for="">Vicent van Gogh</label>
+            <br>
+            <input name="pergunta3" type="radio" value="pp">
+            <label for="pp">Pablo Picasse</label>
+            <br>
+            <input name="pergunta3" type="radio" value="lv">
+            <label for="lv">Leonardo da Vinci</label>
+            <br>
+            <input name="pergunta3" type="radio" value="pai">
+            <label for="pai">Seu Pai</label>
+            <br>
+            <input name="pergunta3" type="radio" value="mae">
+            <label for="mae">Sua Mae</label>
+        </form>
+    </section>
+
+    <br>
+
+    <section>
+        <button type="submit" id="verifica" onclick="verificacao()">Enviar</button>
+    </section>
+
+    <footer>
+        <p id="resultado"></p>
+    </footer>
+    <script src="main.js"></script>
+
+</html>
