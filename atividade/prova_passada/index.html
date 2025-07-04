@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Filmes</h1>
+        <input type="text" id="campoBusca" placeholder="Buscar filmes...">
+    </header>
+
+    <section id="listaFilmes">
+        <ul id="filmes">
+            <li class="itemFilme">
+                <span class="nomeFilme">Filme 1</span>
+                <span class="botaoRemover" onclick="this.parentElement.remove()">remover</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="secaoControle">
+        <label>
+            <input type="checkbox" id="esconderFilmes"> Esconder todos os filmes
+        </label>
+    </section>
+
+    <div class="espaco"></div>
+
+    <section id="secaoAdicionar">
+        <input type="text" id="campoFilme" placeholder="Adicionar um filme...">
+        <button id="botaoInserir">Inserir</button>
+    </section>
+
+    <footer>
+        <ul id="guias">
+            <li id="guiaSobre" class="ativo">Sobre</li>
+            <li id="guiaContato">Contato</li>
+        </ul>
+
+        <div id="painelSobre" class="painel ativo">
+            <p>Conteúdo da guia sobre.</p>
+        </div>
+        <div id="painelContato" class="painel">
+            <p>Conteúdo da guia contato.</p>
+        </div>
+    </footer>
+</body>
+</html>
